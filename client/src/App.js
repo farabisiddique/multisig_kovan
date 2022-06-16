@@ -81,6 +81,12 @@ function App() {
 
     return (
       <div className="loadingGif">
+        <p>
+          Developed by 
+          <a href='https://www.linkedin.com/in/farabisiddique/'>
+            Farabi Siddique
+          </a>
+        </p>
         <img 
           src={loadingGif} 
         />
