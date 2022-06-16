@@ -82,11 +82,12 @@ function App() {
     return (
       <div className="loadingGif">
         <h1>
-          Developed by 
+          Developed by &nbsp;&nbsp;
           <a href='https://www.linkedin.com/in/farabisiddique/'>
             Farabi Siddique
           </a>
         </h1>
+        <h2>Please connect to the Kovan Testnet before using this dApp</h2>
         <img 
           src={loadingGif} 
         />
