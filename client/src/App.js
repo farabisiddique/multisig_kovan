@@ -81,12 +81,12 @@ function App() {
 
     return (
       <div className="loadingGif">
-        <p>
+        <h1>
           Developed by 
           <a href='https://www.linkedin.com/in/farabisiddique/'>
             Farabi Siddique
           </a>
-        </p>
+        </h1>
         <img 
           src={loadingGif} 
         />

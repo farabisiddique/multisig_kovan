@@ -45,6 +45,8 @@ table,tr,th,td{
 .loadingGif{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .transferList{
