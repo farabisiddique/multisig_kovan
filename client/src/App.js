@@ -7,6 +7,7 @@ import NewTransfer from './NewTransfer';
 import TransferList from './TransferList';
 import detectEthereumProvider from '@metamask/detect-provider';
 import loadingGif from './img/loading.gif';
+import farabiLogo from './img/farabisiddique.jpg'
 
 
 
@@ -81,13 +82,41 @@ function App() {
 
     return (
       <div className="loadingGif">
-        <h1>
+        <h1>Multisig Wallet with Kovan</h1>
+        <h3>Please connect to the Kovan Testnet before using this dApp</h3>
+        <h3>
           Developed by &nbsp;&nbsp;
-          <a href='https://www.linkedin.com/in/farabisiddique/'>
+          <a 
+            href='https://www.linkedin.com/in/farabisiddique/'
+            target="_blank"
+          >
             Farabi Siddique
           </a>
-        </h1>
-        <h2>Please connect to the Kovan Testnet before using this dApp</h2>
+        </h3>
+        <h3>Give me advices on disccord: &nbsp; &nbsp; 
+          <a 
+            href='https://discord.com/users/828517663109677056'
+            target="_blank"
+          >
+          <img 
+            src={farabiLogo}
+            className="farabiLogo"
+          
+          />&nbsp;
+            Farabi Siddique
+          </a>
+
+        </h3>
+        <h4>
+          Github Repository of full smart contract: &nbsp;&nbsp;
+          <a 
+            href='https://github.com/farabisiddique/multisig_kovan'
+            target="_blank"
+          >
+            Multisig Kovan
+          </a>
+        </h4>
+        
         <img 
           src={loadingGif} 
         />
@@ -99,7 +128,7 @@ function App() {
     
     return (
       <div className="App">
-        <h1>MultiSig Wallet2</h1> 
+        <h1>MultiSig Wallet</h1> 
         <p>Connected Account is: <b>{accounts[0]}</b></p>
         
         <Header 
@@ -117,6 +146,27 @@ function App() {
           approve={approveTransfer}
 
         />
+        <br />
+        <p>
+          Developed by &nbsp;&nbsp;
+          <a 
+            href='https://www.linkedin.com/in/farabisiddique/'
+            target="_blank"
+            className='specialLink'
+          >
+            Farabi Siddique
+          </a>
+        </p>
+        <p>
+          View the contract on Etherscan &nbsp;&nbsp;
+          <a 
+            href='https://kovan.etherscan.io/address/0x69b50bd2d21bb7f4f464bd1de0430ba2af9b24d0'
+            target="_blank"
+            className='specialLink'
+          >
+            https://kovan.etherscan.io/address/0x69b50bd2d21bb7f4f464bd1de0430ba2af9b24d0
+          </a>
+        </p>
         
       </div>
     );
